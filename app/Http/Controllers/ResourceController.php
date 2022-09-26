@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Resources;
-use App\ImageSlider;
+use App\ResourceSlider;
 
 use Illuminate\Http\Request;
 
@@ -22,8 +22,8 @@ class ResourceController extends Controller
     public function index()
     {
         $resources_details=Resources::orderBy('id', 'DESC')->latest()->paginate(10);
-        $imageslider_details= ImageSlider::orderBy('id', 'ASC')->latest()->paginate(10);
-        return view('user.resources.index', compact('resources_details', 'imageslider_details'))
+        $resourceslider_details= ResourceSlider::orderBy('id', 'ASC')->latest()->paginate(10);
+        return view('user.resources.index', compact('resources_details', 'resourceslider_details'))
                 ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 

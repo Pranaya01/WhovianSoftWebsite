@@ -14,7 +14,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $news_details=News::orderBy('id', 'DESC')->latest();
+        $news_details=News::orderBy('id', 'DESC')->latest()->paginate(10);
         $imageslider_details= ImageSlider::orderBy('id', 'ASC')->latest()->paginate(10);
         return view('user.index', compact('news_details', 'imageslider_details'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);    

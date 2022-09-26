@@ -30,7 +30,7 @@
   <div class="w3-row w3-margin">
 
   <div class="w3-third">
-    <img src="img_5terre.jpg" style="width:100%;min-height:200px">
+    <img src="{{ asset('images/service-1.jpg') }}" style="width:100%;min-height:200px">
   </div>
   <div class="w3-twothird w3-container">
     <h2>Program for Organizations </h2>
@@ -43,7 +43,7 @@
   <div class="w3-row w3-margin">
 
   <div class="w3-third">
-    <img src="img_monterosso.jpg" style="width:100%;min-height:200px">
+    <img src="{{ asset('images/service-2.jpg') }}" style="width:100%;min-height:200px">
   </div>
   <div class="w3-twothird w3-container">
     <h2>Self-paced learning </h2>
@@ -56,7 +56,7 @@
   <div class="w3-row w3-margin">
 
   <div class="w3-third">
-    <img src="img_vernazza.jpg" style="width:100%;min-height:200px">
+    <img src="{{ asset('images/service-3.jpg') }}" style="width:100%;min-height:200px">
   </div>
   <div class="w3-twothird w3-container">
     <h2>Diversity Equity Inclusion Audit </h2>
@@ -70,10 +70,10 @@
 
   </div>
   
- 
   
 
 </main><!-- End #main -->
+
 
 <div id="preloader"></div>
 @include('user.include.footer')

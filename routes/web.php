@@ -17,7 +17,7 @@ Route::get('/login', function () {
     return view('auth/login');
 });
 
-Auth::routes(['verify' => true]);
+Auth::routes(['verify' => false]);
 Route::get('/logout', 'Auth\LoginController@logout');
 
 
@@ -32,6 +32,8 @@ Route::group([ 'middleware'=> ['admin'], ('verified')], function(){
     Route::get('newsearch', 'Admin\NewsController@newsearch')->name('newsearch');
 
     Route::resource('admin/resources', 'Admin\ResourceController');
+    Route::resource('admin/resource-slider', 'Admin\ResourceSliderController');
+
 
 
 });

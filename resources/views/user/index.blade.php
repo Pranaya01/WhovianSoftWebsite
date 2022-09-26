@@ -132,7 +132,7 @@
           <h2>Our News</h2>
         </div>
         <div class="row">    
-        @forelse( $news_details->take(3) as $news )
+        @forelse( $news_details as $news )
           <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <article class="entry">
 
@@ -149,12 +149,14 @@
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i>{{ $news->date }}</li>
                 </ul>
               </div>
-              
+
               <div class="entry-content">
-                <!-- <div class="read-more">
+                <!-- <p>{{ $news->news_description }}</p> -->
+                <div class="read-more">
                 <a href="{{ route('article.show', $news->id) }}">Read More</a>
-                </div> -->
+                </div>
               </div>
+
             </article><!-- End news entry -->
           </div>
           @empty
@@ -167,9 +169,6 @@
     </section><!-- End news Section -->
 
     
-
-    
-
     <section id="crew" class="crew">
       <div class="container">
         <div class="section-title">
@@ -292,6 +291,10 @@
       </div>
     </section><!-- End Counts Section -->
     </main>
+<a href="https://www.ujyalofoundation.org/" target="_blank">  
+<img src="{{ asset('images/banner.png ') }}" alt="Banner" style="display: block; margin-left: auto; margin-right: auto; width: 95%;">
+</a>
+
 <div id="preloader"></div>
 @include('user.include.footer')
 @stop

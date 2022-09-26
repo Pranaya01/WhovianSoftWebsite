@@ -45,7 +45,7 @@
         <div class="row">
           <div class="col-12">
           <div align="right">
-            <a href="{{ route('resources.create') }} " class="btn btn-sm btn-success"><span class="fa fa-edit"></span>Add Image</a>
+            <a href="{{ route('resources.create') }} " class="btn btn-sm btn-success"><span class="fa fa-edit"></span>Add Resource</a>
              </div>
             <div class="card">
               <div class="card-header">

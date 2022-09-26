@@ -45,6 +45,15 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{ route('resource-slider.index') }}" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Resources Image Slider
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
           <li class="nav-item has-treeview">
             <a href="{{ route('image-slider.index') }}" class="nav-link">
               <i class="nav-icon fa fa-image"></i>

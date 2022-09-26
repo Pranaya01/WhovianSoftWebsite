@@ -28,13 +28,12 @@
       </ol>
 
         <div class="carousel-inner" role="listbox">
-        @forelse( $imageslider_details->take(3) as $images )
+        @forelse( $resourceslider_details->take(6) as $slider )
             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-            <img src="{{url('images/image-slider', $images->image)}}" alt="{{ $images->title }}" style="object-position: top; height: auto; width: 100%;">
-                    <div class="carousel-caption ">
-                    <!-- d-none d-md-block -->
-                      <h2 class="animate__animated animate__fadeInDown">{{ $images->title }}</h2>
-                    </div>
+            <img src="{{url('images/resource-slider', $slider->image)}}" alt="{{ $slider->title }}" style="object-position: top; height: 100%; width: 100%;">
+                    <!-- <div class="carousel-caption ">
+                      <h2 class="animate__animated animate__fadeInDown">{{ $slider->title }}</h2>
+                    </div> -->
             </div>
             @empty
             <h5 style="margin-left:10px">Sorry, No Image Found</h5>
