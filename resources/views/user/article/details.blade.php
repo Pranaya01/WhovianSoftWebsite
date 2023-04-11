@@ -1,5 +1,7 @@
 @extends('layouts.user.index')
-@section('PageTitle', $news_details->news_title)
+@section('PageTitle', $news_details->meta_title)
+@section('Meta Description', $news_details->meta_description)
+
 @section('user')
 @include('user.include.header')
 
@@ -7,17 +9,12 @@
 
 <!-- ======= Breadcrumbs Section ======= -->
 <section class="breadcrumbs">
-  <div class="container">
-
-    <div class="d-flex justify-content-between align-items-center">
-      <h2>News Detail</h2>
-      <ol>
-        <li><a href="{!! url(''); !!}">Home</a></li>
-        <li>News</li>
-      </ol>
-    </div>
-
+  <div class="container my-5">
+  <div class="text-center mb-5">
+  <h2 class="font-weight-bold themeblue header-2">News</span></h2>
+        <h4 class="header-4 blacktext">Latest News from Whoviansoft</h4>
   </div>
+
 </section><!-- End Breadcrumbs Section -->
 <!-- ======= news Section ======= -->
 <section id="news" class="news">
@@ -29,21 +26,21 @@
 
             <article class="entry entry-single">
 
-              <div class="entry-img">
+            <div class="entry-img">
                 <img src="{{url('images/news', $news_details->image)}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">{{ $news_details->news_title }}</h2>
-
               <div class="entry-meta">
                 <ul>
-                  <!-- <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="news-single.html">John Doe</a></li> -->
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> {{ $news_details->date }} </li>
+                  <li class="d-flex align-items-center list-font"><i class="icofont-user"></i> By: {{ $news_details->user_name->name }}</a></li>
+                  <li class="d-flex align-items-center list-font"><i class="icofont-wall-clock"></i>{{ $news_details->date }}</li>
+                  <li class="d-flex align-items-center list-font "><i class="icofont-newspaper"></i>{{ $news_details->news_category }}</li>
                 </ul>
               </div>
 
               <div class="entry-content">
-                <p>{{ $news_details->news_description }}</p>
+                <p class="paragraph">{{ $news_details->news_description }}</p>
                 <!-- <blockquote>
                   <i class="icofont-quote-left quote-left"></i>
                   <p>
@@ -62,11 +59,12 @@
                 </div>
 
               </div> -->
-              <div class="entry-content">
-                <div class="float-left read-more">
-                  <a href="{!! url('article'); !!}">Back</a>
+              <div class="default-buttons mt-5">
+                <div class="float-left">
+                    <a href="{!! url('article'); !!}">Back</a>
                 </div>
-              </div>
+            </div>   
+
 
             </article><!-- End news entry -->
 
@@ -85,7 +83,6 @@
 </br>
 </br>
 <div id="preloader"></div>
-@include('user.include.sponsor')
 
 @include('user.include.footer')
 @stop

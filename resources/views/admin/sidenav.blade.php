@@ -2,18 +2,18 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('admin.index') }}" class="brand-link">
-      <img src="{{ asset('images/mlc.png') }}" alt="MLC Logo" class="brand-image img-circle elevation-3"
+      <img src="{{ asset('whovian-soft.png') }}" alt="whovian-soft Logo" class="brand-image img-circle elevation-3"
            style="opacity: .9">
-      <span class="brand-text font-weight-light">MLC</span>
+      <span class="brand-text font-weight-light">Whovian Soft</span>
     </a>    
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <!-- <div class="image">
+        <div class="image">
           <img src="{{ asset('dist/img/user.png') }}" class="img-circle elevation-2" alt="User Image">
-        </div> -->
+        </div>
         <div class="info">
           <a href="" class="d-block">{{ Auth::user()->name }}</a>
           <!-- <a href="{{ route('users.index') }}" class="d-block">{{ Auth::user()->email }}</a> -->
@@ -28,7 +28,7 @@
                with font-awesome or any other icon font library -->
         
           <li class="nav-item">
-            <a href="{{ route('users.index') }}" class="nav-link">
+            <a href="{{url('/admin/users')}}" class="nav-link">
               <i class="nav-icon fas fa-user-edit"></i>
               <p>
                 Users
@@ -37,39 +37,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('resources.index') }}" class="nav-link">
-              <i class="nav-icon far fa-file-pdf"></i>
-              <p>
-                Resources
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ route('resource-slider.index') }}" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Resources Image Slider
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="{{ route('image-slider.index') }}" class="nav-link">
-              <i class="nav-icon fa fa-image"></i>
-              <p>
-             Image Slider
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="{{ route('news.index') }}" class="nav-link">
-            <i class="nav-icon far fa-newspaper"></i>
-              <p>
+            <a href="{{url('/admin/news')}}" class="nav-link">
+            <i class="fas fa-newspaper"></i>             
+             <p>
                 News
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
+          
           <li class="nav-item">
             <a href="{{url('/logout')}}" class="nav-link">
             <i class="nav-icon fa fa-sign-out"></i>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MLC - Admin Dashboard</title>
+  <title>WhovianSoft - Admin Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -26,7 +26,11 @@
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="shortcut icon" href="{{ asset('tsc_favicon.icon') }}" >
+  <!-- Favicons -->
+  <link href="{{ asset('whovian-soft.png') }}" rel="icon">
+    <a href="https://www.facebook.com/whoviansoft" target="_blank"><i class="icofont-facebook"></i></a>
+    <link href="{{ asset('whovian-soft.png') }}" rel="icon">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 
@@ -68,5 +72,6 @@
 <script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js') }}"></script>
+
 </body>
 </html>

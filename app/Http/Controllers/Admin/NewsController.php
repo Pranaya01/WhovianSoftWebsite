@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\News;
+use App\User;
 use App\Http\Resources\News as NewsResource;
 use App\Http\Controllers\Controller;
 class NewsController extends Controller
@@ -34,7 +35,10 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view('admin.news.create');
+        $news_details = News::get();
+        $user_details = User::get();
+        return view('admin.news.create', compact('news_details', 'user_details'));
+
     }
 
     /**
@@ -48,8 +52,13 @@ class NewsController extends Controller
         $request->validate([
             'date' => 'required|date|max:20',
             'news_title' => 'required|string',
+            'news_category' => 'string|max:20',
             'news_description' => 'required|string',
-            'image'        =>  'image|max:2048'
+            'image'        =>  'image|max:2048',
+            'user_id' => 'required|string|max:20',
+            'meta_title' => 'required',
+            'meta_description' => 'required'
+
         ]);
         $image = $request->file('image');
 
@@ -58,9 +67,13 @@ class NewsController extends Controller
         $input_news = array(
             'date' => $request->date,
            'news_title' => $request->news_title,
-        //    'news_type' => $request->news_type,
+           'news_category' => $request->news_category,
            'news_description' => $request->news_description,
-           'image' => $new_image
+           'image' => $new_image,
+           'user_id' => $request->user_id, 
+           'meta_title'=> $request->meta_title,
+           'meta_description' => $request->meta_description 
+
         );
             News::create($input_news);
             return redirect('admin/news')->with('Success', 'News Detailed Saved!');
@@ -87,7 +100,8 @@ class NewsController extends Controller
     public function edit($id)
     {
         $news_details = News::findOrFail($id);
-        return view('admin.news.edit', compact('news_details'));
+        $user_details = User::get();
+        return view('admin.news.edit', compact('news_details', 'user_details'));
     }
 
     /**
@@ -106,8 +120,12 @@ class NewsController extends Controller
             $request->validate([
                 'date' => 'required|date|max:20',
                 'news_title' => 'required|string',
+                'news_category' => 'string|max:20',
                 'news_description' => 'required|string',
-                'image'        =>  'image|max:2048'
+                'image'        =>  'image|max:2048',
+                'user_id' => 'required',
+                'meta_title' => 'required',
+                'meta_description' => 'required'
             ]);
 
             $news_image = rand() . '.' . $image->getClientOriginalExtension();
@@ -118,16 +136,26 @@ class NewsController extends Controller
             $request->validate([
                 'date' => 'required|date|max:20',
                 'news_title' => 'required|string',
+                'news_category' => 'string',
                 'news_description' => 'required|string',
-                'image'        =>  'image|max:2048'
+                'image'        =>  'image|max:2048',
+                'user_id' => 'required',
+                'meta_title' => 'required',
+                'meta_description' => 'required'
+
             ]);
         }
 
         $input_news = array(
             'date' => $request->date,
             'news_title' => $request->news_title,
+            'news_category' => $request->news_category,
             'news_description' => $request->news_description,
-            'image' => $news_image
+            'image' => $news_image,
+            'user_id' => $request->user_id,
+            'meta_title'=> $request->meta_title,
+            'meta_description' => $request->meta_description
+
         );
   
         News::whereId($id)->update($input_news);

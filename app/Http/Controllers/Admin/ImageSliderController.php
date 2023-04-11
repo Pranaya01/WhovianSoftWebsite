@@ -44,7 +44,7 @@ class ImageSliderController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:30',
-            'image'        =>  'image|max:2048'
+            'image'        =>  'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $image = $request->file('image');
 

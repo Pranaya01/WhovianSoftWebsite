@@ -72,6 +72,8 @@
                       <th>Date</th>
                       <th>News Title</th>
                       <th>News Description</th>
+                      <th>Meta Title</th>
+                      <th>Meta Description</th>
                       <th>Image</th>
                       <th>Action</th>
                     </tr>
@@ -80,8 +82,10 @@
                 <tbody>
                     <td>{{ $news->id }}
                     <td>{{ $news->date}}</td>
-                    <td width="20%">{{ Str::limit($news->news_title, 60) }}</td>
-                    <td width="45%">{{ Str::limit($news->news_description, 120) }}</td>
+                    <td width="20%">{{ Str::limit($news->news_title, 20) }}</td>
+                    <td width="30%">{{ Str::limit($news->news_description, 30) }}</td>
+                    <td width="20%">{{ Str::limit($news->meta_title, 20) }}</td>
+                    <td width="30%">{{ Str::limit($news->meta_description, 30) }}</td>
                     <td><img src="{{ URL::to('/') }}/images/news/{{ $news->image }}" width="100" height="60" /></td>
                     <td width="20%">
                         <form action="{{ route('news.destroy', $news->id) }}" method="post">

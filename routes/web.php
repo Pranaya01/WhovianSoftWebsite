@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,31 +26,39 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::group([ 'middleware'=> ['admin'], ('verified')], function(){
     Route::get('/admin', 'Admin\AdminController@index')->name('admin.index');
     Route::resource('admin/users', 'Admin\UserController');
-    Route::get('usersearch', 'Admin\UserController@usersearch')->name('usersearch');
-    
+    Route::get('usersearch', 'Admin\UserController@usersearch')->name('usersearch');   
     Route::resource('admin/image-slider', 'Admin\ImageSliderController');
-
-    Route::resource('admin/news', 'Admin\NewsController');
-    Route::get('newsearch', 'Admin\NewsController@newsearch')->name('newsearch');
-
     Route::resource('admin/resources', 'Admin\ResourceController');
     Route::resource('admin/resource-slider', 'Admin\ResourceSliderController');
-
+    Route::resource('admin/news', 'Admin\NewsController');
+    Route::get('newsearch', 'Admin\NewsController@newsearch')->name('newsearch');
+    // Route::get('/home', 'HomeController@index')->name('home');
 
 
 });
-// Route::get('/home', 'HomeController@index')->name('home');
+
 
 Route::resource('', 'IndexController');
-Route::get('about-us', 'AboutUsController@index')->name('index');
-Route::resource('resource', 'ResourceController');
-Route::get('faq', 'AboutUsController@faq')->name('faq');
-Route::get('services', 'AboutUsController@services')->name('services');
+Route::post('/subscribe', 'IndexController@subscribe')->name('subscribe');
+Route::get('about-us', 'AboutUsController@aboutus')->name('aboutus');
+Route::get('partnership-model', 'AboutUsController@partnership_model')->name('partnership_model');
+Route::get('amazon-services', 'AboutUsController@amazon_services')->name('amazon_services');
+Route::get('catalogmanagement', 'AboutUsController@catalogmanagement')->name('catalogmanagement');
+Route::get('itstaffing', 'AboutUsController@itstaffing')->name('itstaffing');
+Route::get('ecommerce-service', 'AboutUsController@ecommerce')->name('ecommerce');
+Route::get('marketplace-service', 'AboutUsController@marketplace')->name('marketplace');
+Route::get('webdesign-service', 'AboutUsController@webdesign')->name('webdesign');
+Route::get('seo-service', 'AboutUsController@seoservice')->name('seoservice');
+
+
+
+
 Route::resource('article', 'UserNewsController');
-Route::get('contact-us', 'ContactController@getContact')->name('getContact');
-Route::post('contact-us', 'ContactController@saveContact')->name('saveContact');
+Route::resource('contact', 'ContactUsController');
 
 
+// Route::get('contact', 'ContactController@sendEmail')->name('sendEmail');
+// Route::post('contact', 'ContactController@create')->name('create');
 
 
 

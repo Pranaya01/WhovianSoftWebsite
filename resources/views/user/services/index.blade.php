@@ -76,5 +76,6 @@
 
 
 <div id="preloader"></div>
+@include('user.include.contact')
 @include('user.include.footer')
 @stop

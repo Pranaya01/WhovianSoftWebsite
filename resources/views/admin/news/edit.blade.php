@@ -83,14 +83,39 @@
                             <input type="text" name="news_title" class="form-control form-control-sm" id="news_title"  value="{{ $news_details->news_title }}">
                         </div>
                     </div>
-                    </hr>
-                  
+                    <div class="form-group">
+                        <label for="news_category" class="col-sm-4" style="color:black; text:bold">News Category:</label>
+                        <div class="col-sm-8">
+                          <select name="news_category" id="news_category" class="form-control form-control-sm" >
+                          <option value="{{ $news_details->news_category}}">{{ $news_details->news_category }}</option>
+                                <option value="">---Select Team Type---</option>
+                                <option value="Marketplace">Marketplace</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Web Development">Web Development</option>
+                          </select>
+
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label for="news_description" class="col-sm-3"style="color:black; text:bold">News Description:</label>
                         <div class="col-sm-10">
                         <textarea cols="10" rows="5" class="form-control" name="news_description"> {{ $news_details-> news_description }}</textarea>
                         </div>
                     </div>
+                    <div class="form-group">
+                    <label for="user_id" class="col-sm-3" style="color:black; text:bold">Editor:</label>
+                    <div class="col-sm-6">
+                        <select name="user_id" id="user_id" class="form-control form-control-sm" >
+                            <option value="{{ $news_details->user_id }}">{{$news_details->user_name->name}}</option>
+                            <option value=>--Select Editor--</option>
+                            @foreach ($user_details as $user)
+                            <option value="{{ $user->id }}">{{ $user->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
                     <div class="form-group">
                         <label for="file" class="col-sm-3" style="color:black; text:bold">Choose File:</label>
                         <div class="form-group col-md-6">
@@ -100,7 +125,20 @@
                             <img src="{{ URL::to('/') }}/images/news/{{ $news_details->image }}" class="rectangle" width="500" height="300" />
                             <input type="hidden" name="hidden_image" value="{{ $news_details->image }}" />
                         </div>
-                    </div>        
+                    </div>  
+                    <div class="form-group">
+                        <label for="meta_title" class="col-sm-4" style="color:black; text:bold">Meta Title:</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="meta_title" class="form-control form-control-sm" id="news_title"  value="{{ $news_details->meta_title }}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="meta_description" class="col-sm-3"style="color:black; text:bold">Meta Description:</label>
+                        <div class="col-sm-10">
+                        <textarea cols="10" rows="5" class="form-control" name="meta_description"> {{ $news_details-> meta_description }}</textarea>
+                        </div>
+                    </div>
+                          
                     <a href="{{ route('news.index') }}" class="btn btn-warning">Back</a>
                     <button type="submit" class="btn btn-info input-lg">Update News</button>
                     <br>

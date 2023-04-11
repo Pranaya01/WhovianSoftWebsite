@@ -97,18 +97,17 @@
                         <input type="text" name="news_title" class="form-control form-control-sm" id="news_title" placeholder="Enter News Title">
                     </div>
                 </div>
-                <!-- <div class="form-group">
-                    <label for="news_type" class="col-sm-3" style="color:black; text:bold">News Type:</label>
+                <div class="form-group">
+                    <label for="news_category" class="col-sm-3" style="color:black; text:bold">News Category:</label>
                     <div class="col-sm-4">
-                        <select name="news_type" id="news_type" class="form-control form-control-sm" >
-                            <option value="3">Competition</option>
-                            <option value="4">ANFA</option>
-                            <option value="5">Development</option>
-                            <option value="6">Mens Football</option>
-                            <option value="7">Womens Football</option>
+                        <select name="news_category" id="news_category" class="form-control form-control-sm" >
+                            <option value="Marketplace">Marketplace</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Web Development">Web Development</option>
                         </select>
                     </div>
-                </div> -->
+                </div>
                 <div class="form-group">
                     <label for="news_description" class="col-sm-3" style="color:black; text:bold">Description:</label>
                     <div class="col-sm-8">
@@ -119,6 +118,29 @@
                     <label for="image" class="col-sm-3" style="color:black; text:bold">Choose File:</label>
                     <div class="col-sm-8">
                         <input type="file" name="image" class="form-control form-control-sm" id="image">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user_id" class="col-sm-3" style="color:black; text:bold">Editor:</label>
+                    <div class="col-sm-6">
+                        <select name="user_id" id="user_id" class="form-control form-control-sm" >
+                            <option value="">---Select Editor---</option>
+                            @foreach ($user_details as $user)
+                            <option value="{{ $user->id }}">{{ $user->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meta_title" class="col-sm-3" style="color:black; text:bold">Meta Title:</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="meta_title" class="form-control form-control-sm" id="meta_title" placeholder="Enter Meta Title">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="meta_description" class="col-sm-3" style="color:black; text:bold">Meta Description:</label>
+                    <div class="col-sm-8">
+                        <textarea cols="5" rows="5" class="form-control" name="meta_description"></textarea>
                     </div>
                 </div>
                 <br>

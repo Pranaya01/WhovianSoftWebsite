@@ -10,8 +10,14 @@ class News extends Model
     protected $fillable = [
         'date',
         'news_title', 
-        'news_type',
+        'news_category',
         'news_description', 
-        'image'
+        'user_id',
+        'image',
+        'meta_title',
+        'meta_description'
     ];
+    public function user_name(){
+        return $this->hasOne('App\User', 'id', 'user_id');
+    }
 }

@@ -5,29 +5,42 @@ use Illuminate\Http\Request;
 
 class AboutUsController extends Controller
 {
-    public function index()
+    public function aboutus()
     {
         return view('user.aboutus.index');
     }
     
-    // public function boardofdirectors()
-    // {
-    //     $bod_details= Board::all();
-    //     return view('user.aboutus.boardofdirector', compact('bod_details'));
-    // }
-    // public function bod_details()
-    // {
-    //     $bod_details= Board::all();
-    //     return view('user.aboutus.bod_details', compact('bod_details'));
-    // }
-    public function faq()
+    public function amazon_services()
     {
-        return view('user.faq.index');
+        return view('user.services.amazonservices');
     }
-    public function services()
+    public function catalogmanagement()
     {
-        return view('user.services.index');
+        return view('user.services.catalogmanagement');
     }
-    
+    public function itstaffing()
+    {
+        return view('user.services.itstaffing');
+    }
+    public function partnership_model() 
+    {
+        return view('user.aboutus.partnershipmodel');
+    }
+    public function ecommerce()
+    {
+        return view('user.services.ecommerce');
+    }
+    public function marketplace()
+    {
+        return view('user.services.marketplace');
+    }
+    public function webdesign()
+    {
+        return view('user.services.webdesign');
+    }
+    public function seoservice()
+    {
+        return view('user.services.seoservice');
+    }
     
 }
