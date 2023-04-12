@@ -123,59 +123,36 @@
                     <h2 class="font-weight-bold toppadding-20 themered"> Catalog Management Process</h2>
                 </div>
     </div>
-    <div class="container-fluid toppadding-5 pr-5 pl-5 mt-5 pb-5">
-        <div class="row toppadding-5">
-        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-            <div class="card processcard" data-aos="flip-left" data-aos-duration="1000">
-                <div class=" card text-center whitebg noborder">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/img/server.png') }}" alt="John Doe" style="width:100px;">
-                    </div>
-                    <h2 class="themered">Step 1</h2>
-                    <h4 class="font-weight-bold">Research</h4>
-                    <p class="center-align" style="text-align: left; padding-left:10px; padding-right:10px">Our specialists from Whoviansoft assess store performance, plan, and requirements to determine next steps. </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <section class="toppadding-20">
 
-                <div class="card processcard" data-aos="flip-left" data-aos-duration="1500">
-                    <div class=" card text-center whitebg noborder">
-                        <div class="text-center">
-                        <img src="{{ asset('assets/img/server.png') }}" alt="John Doe" style="width:100px;">
-                        </div>
-                        <h2 class="themered">Step 2</h2>
-                        <h4 class="font-weight-bold">Scope Definition</h4>
-                        <p class="center-align" style="text-align: left; padding-left:10px; padding-right:10px">After research, the on-boarding team defines and prioritizes the required tasks for your Ecommerce store's growth.</p>
-                    </div>
-                </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-            <div class="card processcard" data-aos="flip-left" data-aos-duration="2000">
-                <div class=" card text-center whitebg noborder">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/img/server.png') }}" alt="John Doe" style="width:100px;">
-                    </div>
-                    <h2 class="themered">Step 3</h2>
-                    <h4 class="font-weight-bold">Project Planning</h4>
-                    <p class="center-align" style="text-align: left; padding-left:10px; padding-right:10px">We structure resource and time line estimation to ensure a smooth, timely, and cost-effective project delivery.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-            <div class="card processcard" data-aos="flip-left" data-aos-duration="2500">
-                <div class=" card text-center whitebg noborder">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/img/server.png') }}" alt="John Doe" style="width:100px;">
-                    </div>
-                    <h2 class="themered">Step 4</h2>
-                    <h4 class="font-weight-bold">Project Management</h4>
-                    <p class="center-align" style="text-align: left; padding-left:10px; padding-right:10px">After verifying the project plan with your team, we'll start working and communicate with you regularly for feedback.</p>
-                </div>
-            </div>
-        </div>
+    <ul class="process">
+      <li class="process__item">
+        <span class="process__number">1</span>
+        <span class="process__title">Research</span>
+        <span class="process__subtitle">Our specialists from Whoviansoft assess store performance, plan, and requirements to determine next steps.</span>
+      </li>
 
-        </div>
+      <li class="process__item">
+        <span class="process__number">2</span>
+        <span class="process__title">Scope Definition</span>
+        <span class="process__subtitle">After research, the on-boarding team defines and prioritizes the required tasks for your Ecommerce store's growth.</span>
+      </li>
+
+      <li class="process__item">
+        <span class="process__number">3</span>
+        <span class="process__title">Project Planning</span>
+        <span class="process__subtitle">We structure resource and time line estimation to ensure a smooth, timely, and cost-effective project delivery.</span>
+      </li>
+
+      <li class="process__item">
+        <span class="process__number">4</span>
+        <span class="process__title">Project Management</span>
+        <span class="process__subtitle">After verifying the project plan with your team, we'll start working and communicate with you regularly for feedback.</span>
+      </li>
+    </ul>
+                          
+
+    </section>
 
     </div>
 </section>

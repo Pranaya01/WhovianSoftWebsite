@@ -49,7 +49,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h3> SEO Optimized Website </h3>
+              <h4 class="header-4 themered"> SEO Optimized Website </h4>
               <p class="box-paragraph">Our team builds your website from scratch, using the latest SEO best practices. We ensure it captures all the crucial details about your products, services, and company culture. With our conversion-optimized design and user experience, your website won't just attract visitors but also turn them into valuable leads.</p>
             </div>
           </div>
@@ -57,7 +57,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h3>Mobile-friendly, Responsive design</h3>
+              <h4 class="header-4 themered">Mobile-friendly, Responsive design</h4>
               <p class="box-paragraph">Our mobile-responsive designs guarantee that your website looks great and works seamlessly, no matter what device your customers use. Also, we will help you guide your visitors with a clear CTAs to help them find what they need and boost your conversion. </p>
             </div>
           </div>
@@ -65,7 +65,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-users" style="color: #43aed4!important;"></i></div>
-              <h3>Full Service Web Design Services</h3>
+              <h4 class="header-4 themered">Full Service Web Design Services</h4>
               <p class="box-paragraph">Our custom web design service makes sure your website is visually stunning, easy to use, and optimized for success. With our digital marketing expertise, we can create a website with advanced functionality, including eCommerce, forums, and event registrations. If you need high-quality content that tells your brand story and attracts traffic, we've got that covered too. </p>
             </div>
           </div>

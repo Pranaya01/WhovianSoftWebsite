@@ -87,8 +87,8 @@
                                 <label for="message" class="col-sm-3 col-form-label list left-align"><b>Message: </b></label>
                                 <div class="col-sm-9">
                                     <textarea class="form-control form-control-sm list left-align" name="message" id="comment" cols="25" placeholder="Please type your message here..." rows="10" required></textarea>
-                                    <div class="formrow" default-buttons mt-5>
-                                        <button class="btn btn-primary" type="submit" name="btn-send" class="whitetext">Submit</button>
+                                    <div class="formrow default-buttons mt-5">
+                                        <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" type="submit" name="btn-send" class="whitetext">Submit</button>
                                     </div>
                                     
                                 </div>

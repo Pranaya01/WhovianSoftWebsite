@@ -50,7 +50,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h3> Search Engine Optimization (SEO) </h3>
+              <h4 class="header-4 themered"> Search Engine Optimization (SEO) </h4>
               <p class="box-paragraph">With increased visibility comes brand awareness and quality traffic to your website.
 We utilize white-hat SEO principles to analyze and implement effective on-page and off-page solutions that lead to high search engine rankings on Google and Bing. 
 </p>
@@ -60,7 +60,7 @@ We utilize white-hat SEO principles to analyze and implement effective on-page a
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h3>Search Engine Marketing(SEM)</h3>
+              <h4 class="header-4 themered">Search Engine Marketing(SEM)</h4>
               <p class="box-paragraph">If you are looking to reach more customers and increase sales, SEM can help you. Our specialists can help you optimize your Google, Bing, or Amazon Ads to drive targeted traffic straight to your doorstep. With our expert know-how, you can quickly find customers who need your products or services and solve their problems quickly.</p>
             </div>
           </div>
@@ -68,7 +68,7 @@ We utilize white-hat SEO principles to analyze and implement effective on-page a
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-users" style="color: #43aed4!important;"></i></div>
-              <h3>Keyword Reasearch</h3>
+              <h4 class="header-4 themered">Keyword Reasearch</h4>
               <p class="box-paragraph">Our expertise lies in conducting keyword research to understand what terms your potential customers are using. With this knowledge, we can optimize your content and help you attract and convert high-quality leads to your website.</p>
             </div>
           </div>
@@ -78,7 +78,7 @@ We utilize white-hat SEO principles to analyze and implement effective on-page a
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h3>SEO Audit</h3>
+              <h4 class="header-4 themered">SEO Audit</h4>
               <p class="box-paragraph">Your website's ranking depends on numerous factors, and even the slightest mistake can affect your SEO strategy. With our comprehensive audit, we'll provide you with insights into how well your current SEO efforts are performing, as well as identify areas that need improvement.</p>
             </div>
           </div>
@@ -86,7 +86,7 @@ We utilize white-hat SEO principles to analyze and implement effective on-page a
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h3>Link Building</h3>
+              <h4 class="header-4 themered">Link Building</h4>
               <p class="box-paragraph">LA strong SEO strategy is not just about content creation, but also about obtaining links. Each backlink to your website is like a vote of confidence in your brand. With our expert outreach program, we can help you build high-quality backlinks that enhance your relevance and establish your authority online.</p>
             </div>
 </div>

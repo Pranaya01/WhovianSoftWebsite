@@ -27,18 +27,18 @@
                   <li><a href="{!! url('itstaffing'); !!}">IT Staffing</a></li>
                 </ul>
           </li>  
-          <li class="drop-down"><a href="{!! url('#newsletter'); !!}">Resource</a>
+          <li class="drop-down"><a href="{!! url('/#newsletter'); !!}">Resource</a>
                 <ul>
                   <li><a href="{!! url('article'); !!}">Blogs</a></li>
                 </ul>
           </li>   
-          <li class="drop-down"><a href="{!! url('#partnership-model'); !!}">Agency</a>
+          <li class="drop-down"><a href="{!! url('/#partnership-model'); !!}">Agency</a>
                 <ul>
-                  <li><a href="{!! url('about-us'); !!}">About us </a></li>
-                  <li><a href="{!! url('partnership-model'); !!}">Partnership models</a></li>
+                  <li><a href="{!! url('/#about_us'); !!}">About us </a></li>
+                  <li><a href="{!! url('/#partnership-model'); !!}">Partnership models</a></li>
                 </ul>
           </li> 
-          <li><a href="{!! url('contact'); !!}">Contact Us</a></li> 
+          <li><a href="{!! url('/#contact_us'); !!}">Contact Us</a></li> 
 
         </ul>
 

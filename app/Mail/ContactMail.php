@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     {
         return $this->view('user.contact.email')
                     ->subject('A new contact email')
-                    ->from('pranay.pradhan647@gmail.com', 'System')
+                    ->from('pranay.pradhan647@gmail.com', 'WhovianSoft Pvt. Ltd.')
                     ->with('data', $this->data);
     }
 }

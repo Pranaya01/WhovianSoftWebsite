@@ -51,7 +51,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h3> Product Listing </h3>
+              <h4 class="header-4 themered">Product Listing </h4>
               <p class="box-paragraph">We'll select the perfect listing category or create customized item listings for your unlisted items. Our team crafts catchy titles that capture your product's essence and creates compelling product descriptions with eye-catching image. Sit back and relax as we take care of your marketplace listings, leaving you with more time to focus on growing your business.</p>
             </div>
           </div>
@@ -59,7 +59,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h3>Product Image Editing and Uploading</h3>
+              <h4 class="header-4 themered">Product Image Editing and Uploading</h4>
               <p class="box-paragraph">We offer Ecommerce image editing and services to best showcase your products. Our experts can customize your images for thumbnail, normal, and zoom-in views, ensuring they're high-resolution, focused, bright, and have optimal file size for quick page downloads. Plus, we'll make sure your images have a clear or white background, making them stand out and look professional. </p>
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-users" style="color: #43aed4!important;"></i></div>
-              <h3>Product Description</h3>
+              <h4 class="header-4 themered">Product Description</h4>
               <p class="box-paragraph">Detailed and accurate information on product information page is crucial to attract your target audience and increasle sales. Our team of experts specializes in crafting detailed and accurate descriptions that will grab your customers' attention and boost your sales. </p>
             </div>
           </div>
@@ -77,7 +77,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h3>Inventory Management  </h3>
+              <h4 class="header-4 themered">Inventory Management  </h4>
               <p class="box-paragraph">We'll keep you in the loop on all the vital details for your items, including restock dates and lead times required for shipping after an order is placed. With our help, you can seamlessly list your items on the marketplaces of your choice, and provide your customers with accurate information, ensuring their satisfaction.</p>
             </div>
           </div>
@@ -85,7 +85,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h3>Order Processing</h3>
+              <h4 class="header-4 themered">Order Processing</h4>
               <p class="box-paragraph">Let us take the hassle of order processing out of your hands. Our expert team can help you with everything from checking item availability to tracking customer credit positions, generating invoices, and providing order status reports.</p>
             </div>
           </div>
@@ -93,7 +93,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-users" style="color: #43aed4!important;"></i></div>
-              <h3>Channel Analytics</h3>
+              <h4 class="header-4 themered">Channel Analytics</h4>
               <p class="box-paragraph">Our services provide in-depth channel insights and conversion path analysis to help you make informed decisions and improve your promotional efforts. </p>
             </div>
           </div>

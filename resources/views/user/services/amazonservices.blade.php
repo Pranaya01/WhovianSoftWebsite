@@ -30,33 +30,32 @@
 <section>
     <div class="container-fluid background-white toppadding-50 bottompadding-50">
         <div class="container">
-            <div class="row toppadding-10">
-
-                <div class="col-xl-6 col-lg-6 col-md-6 col-6">
-                <div class="float-left">
-                    <h2 class="font-weight-bold themered">Amazon Services</Span></h2>
-                    <h4>Selling Your Amazon Products Made Effortless!</h4>
-                    <p class="list toppadding-30">We handle all the heavy lifting of creating and managing your Amazon store for you. 
-                        Whoviansoft excels in delivering industry-best Amazon services. Our team of experts specialize in providing top-notch Amazon services, covering everything from marketing, advertising to logistics and creative account management. We are your dedicated partner in growth– supporting your needs all the way.</p>
-                </div>
-
-                    
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-6">
-                <div class="float-right">
-                    <h2 class="font-weight-bold themered">Amazing Amazon Facts</Span></h2>
-                    <h4>Focus on what you do best– Selling your amazing products!</h4>
-                    <ul class="fa-ul">
-                    <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>Amazon is the most visited retail site in US with 300 million active users.</li>
-                        <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>Amazon’s net revenue was $386.06 billion in 2020.</li>
-                        <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>Amazon is the second company after Apple to reach $1 trillion mark.</li>
-                        <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>82% of buyers on Amazon give importance to Pricing when shopping on the platform.</li>
-                        <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>4000 items are sold on Amazon in a minute in US alone.</li>
-                        <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check mr-3" style="color: #00B900!important;"></i></span>More than 2.5 Million Sellers are actively selling their products.</li>
-                    </ul>
-                </div>
-               
+          <div class="row toppadding-10">
+            <div class="col-md-6">
+            <div class="float-left">
+              <h2 class="font-weight-bold themered">Amazon Services</Span></h2>
+              <h4>Selling Your Amazon Products Made Effortless!</h4>
+              <p class="list toppadding-30">We handle all the heavy lifting of creating and managing your Amazon store for you. 
+                  Whoviansoft excels in delivering industry-best Amazon services. Our team of experts specialize in providing top-notch Amazon services, covering everything from marketing, advertising to logistics and creative account management. We are your dedicated partner in growth– supporting your needs all the way.</p>
+          </div>
             </div>
+            <div class="col-md-6">
+            <div class="float-right">
+              <h2 class="font-weight-bold themered">Amazing Amazon Facts</Span></h2>
+              <h4>Focus on what you do best– Selling your amazing products!</h4>
+              <ul class="fa-ul">
+              <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>Amazon is the most visited retail site in US with 300 million active users.</li>
+                  <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>Amazon’s net revenue was $386.06 billion in 2020.</li>
+                  <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>Amazon is the second company after Apple to reach $1 trillion mark.</li>
+                  <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>82% of buyers on Amazon give importance to Pricing when shopping on the platform.</li>
+                  <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>4000 items are sold on Amazon in a minute in US alone.</li>
+                  <li class="mt-4 list"><span class="fa-li"><i class="fa fa-check themered mr-3"></i></span>More than 2.5 Million Sellers are actively selling their products.</li>
+              </ul>
+          </div>
+                
+            </div>
+          </div>
+
         </div>
     </div>
 </section>
@@ -65,7 +64,7 @@
 <section id="amazon_services">
     <div class="container-fluid toppadding-60 bottompadding-20 background-white">
         <div class="row bottompadding-50 pl-3 pr-3">
-            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+            <div class="col-xl-4 col-lg-3 col-md-4 col-12">
                 <ul class="list-group toppadding-20">
                         <li class="amazon-list font-weight-bold" style="list-style-type: none"><a id="amz_brandregistry" class=" list-group-item activated" href="javascript:void(0);">Brand Registry</a></li>
                         <li class="amazon-list font-weight-bold" style="list-style-type: none"><a id="amz_storesetup" class="list-group-item" href="javascript:void(0);">Amazon Store Setup</a></li>
@@ -76,7 +75,7 @@
                </ul>
 
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-6 col-12">
+            <div class="col-xl-8 col-lg-9 col-md-6 col-12">
                 <div class="amz_storesetup setup hide">
                     <h2 class="themegreen header-2">Amazon Store Setup</h2>
                         <p class="mt-3">We are here to support your Amazon journey right from the start. From creating your Amazon Store to growing your Amazon business, we have your backWe are here to support your Amazon journey right from the start! Your Amazon store has the potential to reach a wider audience and showcase your brand.</p>

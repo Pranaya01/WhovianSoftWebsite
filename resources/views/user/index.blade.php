@@ -162,7 +162,7 @@
                     </ul>    
                 <p class="toppadding-10">Hassle- free product management- so you can focus on what really matters, growing your business!</p>
                 <div class="default-buttons toppadding-40 float-right" >
-                      <a href="{!! url('catalogmanagement'); !!}" style="margin-top: 100px">More</a>
+                      <a href="{!! url('catalogmanagement'); !!}" >More</a>
                 </div>            
                  </div>
               </div>
@@ -190,7 +190,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch ">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-lightbulb-o" style="color: #43aed4!important;"></i></div>
-              <h5 class="header-4">One-Stop- Solution </h5>
+              <h4 class="header-4 themered">One-Stop- Solution </h4>
               <p class="paragraph-left">We're your one-stop shop for all things marketplace management. Be it web development, data entry, transcription, marketing, or conversion – you name it, we've got it covered.</p>
             </div>
           </div>
@@ -198,7 +198,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-money" style="color: #43aed4!important;"></i></div>
-              <h5 class="header-4">Easy Affordable Services</h5>
+              <h4 class="header-4 themered">Easy Affordable Services</h4>
               <p class="paragraph-left">Our services are easy and affordable, without compromising on quality. You'll get top-notch work done at a reasonable cost, without any hassle. hassle.</p>
             </div>
           </div>
@@ -206,7 +206,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-users" style="color: #43aed4!important;"></i></div>
-              <h5 class="header-4">Customer Centric Approach</h5>
+              <h4 class="header-4 themered">Customer Centric Approach</h4>
               <p class="paragraph-left">We're all about putting you first. Our customer-centric approach means we're dedicated to meeting your specific requirements and providing excellent service..</p>
             </div>
           </div>
@@ -214,7 +214,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fa fa-database" style="color: #43aed4!important;"></i></div>
-              <h5 class="header-4">Data Driven Solutions</h5>
+              <h4 class="header-4 themered">Data Driven Solutions</h4>
               <p class="paragraph-left"> When it comes to solutions, we're all about the data. Our data-driven solutions are designed to help you get the most out of your marketplace, with insights and strategies tailored to your unique needs.</p>
             </div>
           </div>
@@ -427,70 +427,46 @@
                 <h2 class="font-weight-bold themeblue">About Us</span></h2>
                 <h3 class="blacktext">What makes you go for Whoviansoft as your ultimate, pertinent and Reliable partner</h3>
                 </div>
-                <div class="container card">
-                <div class="card-body toppadding-20">
-                    <p class="card-text">We go above and beyond to simplify the lives of our clients, whether they're a brand, retailers, or digital agencies looking to improve their global reach. </p>
-                    <p class="card-text">We are a team of digital analysts, web developers, SEO and SEM technicians, project managers, and Marketplace specialists. We help our clients to improve their corporate websites, manage the marketplace or create new projects. </p>
-                    <p class="card-text">Our team of passionate experts believes in simplicity and agility, delivering versatile technology solutions that are tailored to your specific needs. With decades of experience and a focus on client needs, we have helped countless businesses achieve success through innovative solutions and flawless execution.  </p>
-                    <p class="card-text">You can trust us to deliver world-class services and solutions! </p>
-                </div>
-            </div>
-                </div>
+                <div class="section-wrapper" data-scroll-section> <!-- smooth scroll  -->
+    			<section class="contenu-section">
+				<span class="section-bg is-inview" data-background="https://themezinho.net/aventer/images/section-bg01.png" data-scroll data-scroll-speed="3"></span> <!-- section-bg -->
+		
+					  <div class="container">
+						<div class="row align-items-center">
+						  <div class="col-lg-6">
+							<div data-scroll data-scroll-speed="-0.5">
+								<div class="side-content left">
+                                <p class="center-align">We go above and beyond to simplify the lives of our clients, whether they're a brand, retailers, or digital agencies looking to improve their global reach. </p>
+                                <p class="center-align">We are a team of digital analysts, web developers, SEO and SEM technicians, project managers, and Marketplace specialists. We help our clients to improve their corporate websites, manage the marketplace or create new projects. </p>
+                                <p class="center-align">Our team of passionate experts believes in simplicity and agility, delivering versatile technology solutions that are tailored to your specific needs. With decades of experience and a focus on client needs, we have helped countless businesses achieve success through innovative solutions and flawless execution.  </p>
+                                <p class="center-align">You can trust us to deliver world-class services and solutions! </p>
+									<a href="{!! url('contact'); !!}" class="contenu-button"> 
+									<span class="circle" aria-hidden="true"><span class="icon arrow"></span></span> 
+									<span class="button-text">Contact Us</span></a> 
+								</div>
+							</div>
+							  <!-- end data-scroll -->
+						  </div>
+						  <div class="col-lg-6">
+							<div data-scroll data-scroll-speed="0.5">
+								<figure class="side-image"> <img src="{{ asset('assets/img/about-us.png') }}" alt="Image"> </figure>
+							</div>
+							   <!-- end data-scroll -->
+						  </div>
+						</div>
+					  </div>
+			</section>
+	</div>
+  
+              
                 </div>
         </div>
     </div>
 </section>
 
-    <footer id="footer">
-
-<div class="footer-newsletter" id="newsletter">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <h4 class="header-4">Stay updated</h4>
-        <p class="paragraph">with the latest insights, news, and resources</p>
-        <form action="{{route('subscribe')}}" method="post">
-          @csrf
-         
-          <input type="email" name="email"><input type="submit" value="Subscribe">
-        </form>
-        <div class="formrow row">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-                                @if(session('status'))
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-8 col-lg-8 col-md-8">
-                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                            <strong>Success ! </strong>  &nbsp; {{ session('status') }}
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endif
-                                <div class="container">
-                                @if($messages = Session::get('Success'))
-                                <div class="alert alert-success">
-                                    <p align="center">{{$messages}}/p>
-                                </div>
-                                @endif
-
-                                @if($messages = Session::get('error'))
-                                <div class="alert alert-danger">
-                                    <p align="center">{{$messages}}</p>
-                                </div>
-                                @endif
-                                </div>
-                            </div>
-      </div>
-    </div>
-  </div>
-</div>
-            </footer>
-
-
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+@include('user.include.subscribe')
 @include('user.include.contact')
 @include('user.include.footer')
 @stop

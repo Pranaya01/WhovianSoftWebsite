@@ -6,9 +6,8 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <!-- <h3>Whoviansoft Inc.</h3> -->
-        <a href="{!! url(''); !!}" class="logo me-auto"><img src="{{ asset('assets/img/whovian-soft.png') }}" alt="" class="img-fluid"></a>
-        <h2 class="font-weight-bold header-2 themered">WhovianSoft</h2>
+        <a href="{!! url(''); !!}" class="logo me-auto"><img src="{{ asset('assets/img/footer-logo.png') }}" alt="" class="img-fluid"></a>
+        <!-- <h3 class="font-weight-bold header-2 themered">WhovianSoft</h3> -->
         <p class="paragraph">
           <strong>Email:</strong>info@whoviansoft.com<br>
           <strong>Phone:</strong>+1 (315) 784 1093<br>
@@ -43,7 +42,7 @@
       <div class="col-lg-3 col-md-6 footer-links">
         <h4 class="header-4">Our Social Networks</h4>
         <p>Follow us on our social media handles</p>
-        <div class="social-links mt-3">
+        <div class="social-links mt-5">
           <a href="https://www.facebook.com/whoviansoft" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/company/whoviansoft-inc?original_referer=" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
